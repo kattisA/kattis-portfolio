@@ -1,5 +1,5 @@
 # Kattis portfolio
-Using a w3Schools template to create a portfolio with CSS.
+Using a w3Schools template to create a portfolio with w3CSS.
 
 ## Description
 
