@@ -8,7 +8,6 @@ Learning more about:
 - html, CSS and w3CSS framework
 - jquery and javascript
 
-
 ## Authors
 
 Katarina Lejonlid. See more of [my GitHub pages](https://kattisa.github.io/).
