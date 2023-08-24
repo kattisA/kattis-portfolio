@@ -3,7 +3,10 @@ Using a w3Schools template to create a portfolio with w3CSS.
 
 ## Description
 
-The purpose of this project is to highlight my competences and to learn more about making sites.
+The purpose of this project is to highlight my competences and to learn more about making sites. 
+Learning more about:
+- html, CSS and w3CSS framework
+- jquery and javascript
 
 
 ## Authors
