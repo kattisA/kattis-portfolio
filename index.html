@@ -1,254 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>W3.CSS Template</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css"/>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", sans-serif
+    }
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="/images/kattis_liten.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>PORTFOLIO</b></h4>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
-    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-keyboard-o fa-fw w3-margin-right"></i>TECH SKILLS</a>
-  </div>
-  <div class="w3-panel w3-large">
-    <a href="https://github.com/kattisA"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/lejonlidkatarina/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
+    <div class="w3-container">
+        <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+           title="close menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <img src="/images/kattis_liten.jpg" style="width:45%;" class="w3-round"><br><br>
+        <h4><b>PORTFOLIO</b></h4>
+    </div>
+    <div class="w3-bar-block">
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+                class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+        <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                class="fa fa-keyboard-o fa-fw w3-margin-right"></i>TECH SKILLS</a>
+    </div>
+    <div class="w3-panel w3-large">
+        <a href="https://github.com/kattisA"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/lejonlidkatarina/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+     title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Filter:</span>
-      <button class="w3-button w3-white selected filter-button" data-type="ALL">ALL</button>
-      <button class="w3-button w3-white filter-button" data-type="pages"><i class="fa fa-laptop w3-margin-right"></i>Pages</button>
-      <button class="w3-button w3-white w3-hide-small filter-button" data-type="apps"><i class="fa fa-tablet w3-margin-right"></i>Apps</button>
-      <button class="w3-button w3-white w3-hide-small filter-button" data-type="articles"><i class="fa fa-file-text-o w3-margin-right"></i>Articles</button>
-    </div>
-    </div>
-  </header>
+    <!-- Header -->
+    <header id="portfolio">
+        <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;"
+                         class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                class="fa fa-bars"></i></span>
+        <div class="w3-container">
+            <h1><b>My Portfolio</b></h1>
+            <div class="w3-section w3-bottombar w3-padding-16">
+                <span class="w3-margin-right">Filter:</span>
+                <button class="w3-button w3-white selected filter-button" data-type="ALL">ALL</button>
+                <button class="w3-button w3-white filter-button" data-type="pages"><i
+                        class="fa fa-laptop w3-margin-right"></i>Pages
+                </button>
+                <button class="w3-button w3-white w3-hide-small filter-button" data-type="apps"><i
+                        class="fa fa-tablet w3-margin-right"></i>Apps
+                </button>
+                <button class="w3-button w3-white w3-hide-small filter-button" data-type="articles"><i
+                        class="fa fa-file-text-o w3-margin-right"></i>Articles
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom filter-box " data-type="pages">
-      <img src="/images/movie_search.png" alt="Screenshot of movie search page" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Movie Search page</b></p>
-        <p>Photos tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container filter-box" data-type="articles">
-      <img src="/images/medium_pojo.png" alt="Medium article screenshot" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>From Json to POJO</b></p>
-        <p>Art tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="pages">
-      <img src="/images/marvel_search.png" alt="Screenshot of marvel search page" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Marvel Search page</b></p>
-        <p>Photos tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
-      <img src="/images/activities.png" alt="Activities Android app" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Activities App</b></p>
-        <p>Design tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
-      <img src="/images/dinner_spinner.png" alt="Screenshot of dinner spinner" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Dinner Spinner App</b></p>
-        <p>Design tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
-      <img src="/images/vabbis.png" alt="Vabbis app" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>VABbis App</b></p>
-        <p>Design tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div>
-
-  <!-- Images of Me -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
-    </div>
-  </div>
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    <hr>
-
-    <h4 id="skills">Technical Skills</h4>
-    <!-- Progress bars / Skills -->
-    <p>Photography</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
-    </div>
-    <p>Web Design</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-    </div>
-    <p>Photoshop</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-    </div>
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Resume
-      </button>
-    </p>
-    <hr>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom filter-box " data-type="pages">
+            <img src="/images/movie_search.png" alt="Screenshot of movie search page" style="width:100%"
+                 class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Movie Search page</b></p>
+                <p>Photos tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container filter-box" data-type="articles">
+            <img src="/images/medium_pojo.png" alt="Medium article screenshot" style="width:100%"
+                 class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>From Json to POJO</b></p>
+                <p>Art tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+                    gravida diam non fringilla.</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="pages">
+            <img src="/images/marvel_search.png" alt="Screenshot of marvel search page" style="width:100%"
+                 class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Marvel Search page</b></p>
+                <p>Photos tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li>
-      </ul>
+    <!-- Second Photo Grid-->
+    <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
+            <img src="/images/activities.png" alt="Activities Android app" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Activities App</b></p>
+                <p>Design tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
+            <img src="/images/dinner_spinner.png" alt="Screenshot of dinner spinner" style="width:100%"
+                 class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Dinner Spinner App</b></p>
+                <p>Design tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+            </div>
+        </div>
+        <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
+            <img src="/images/vabbis.png" alt="Vabbis app" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>VABbis App</b></p>
+                <p>Design tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="w3-third">
-      <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
-      </p>
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+<!--            <a href="#" class="w3-bar-item pagination-button">«</a>-->
+            <a href="#" class="w3-bar-item w3-black w3-button pagination-button">1</a>
+            <a href="#" class="w3-bar-item w3-button pagination-button">2</a>
+<!--            <a href="#" class="w3-bar-item w3-button pagination-button">3</a>-->
+<!--            <a href="#" class="w3-bar-item w3-button pagination-button">4</a>-->
+<!--            <a href="#" class="w3-bar-item pagination-button">»</a>-->
+        </div>
     </div>
 
-  </div>
-  </footer>
+    <!-- Images of Me -->
+    <div class="w3-row-padding w3-padding-16" id="about">
+        <div class="w3-col m6">
+            <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
+        </div>
+        <div class="w3-col m6">
+            <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+        </div>
+    </div>
 
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+        <h4><b>About Me</b></h4>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem
+            ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut
+            rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+            gravida diam non fringilla.</p>
+        <hr>
 
-<!-- End page content -->
+        <h4 id="skills">Technical Skills</h4>
+        <!-- Progress bars / Skills -->
+        <p>Photography</p>
+        <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+        </div>
+        <p>Web Design</p>
+        <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+        </div>
+        <p>Photoshop</p>
+        <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+        </div>
+        <p>
+            <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+                <i class="fa fa-download w3-margin-right"></i>Download Resume
+            </button>
+        </p>
+        <hr>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h3>FOOTER</h3>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            </div>
+
+            <div class="w3-third">
+                <h3>BLOG POSTS</h3>
+                <ul class="w3-ul w3-hoverable">
+                    <li class="w3-padding-16">
+                        <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Lorem</span><br>
+                        <span>Sed mattis nunc</span>
+                    </li>
+                    <li class="w3-padding-16">
+                        <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+                        <span class="w3-large">Ipsum</span><br>
+                        <span>Praes tinci sed</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third">
+                <h3>POPULAR TAGS</h3>
+                <p>
+                    <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span
+                        class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+                                                                title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+    </div>
+
+    <!-- End page content -->
 </div>
 
 <script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
+    const paginationButtons = document.querySelectorAll('.pagination-button');
+    const filterBoxes = document.querySelectorAll('.filter-box');
+    const itemsPerPage = 3;
 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
 
-window.onload = function() {
-  const allButton = document.querySelector('.filter-button[data-type="ALL"]');
-  allButton.classList.remove('w3-white');
-}
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
 
-const filterButtons = document.querySelectorAll('.filter-button');
-  function filterPhotos(type) {
-  const photoGrids = document.querySelectorAll('.filter-box');
+    window.onload = function () {
+        const allButton = document.querySelector('.filter-button[data-type="ALL"]');
+        allButton.classList.remove('w3-white');
 
-    photoGrids.forEach(grid => {
-      const gridType = grid.getAttribute('data-type');
+        // Highlight the first page button
+        paginationButtons[0].classList.add('w3-black');
 
-      if (type === 'ALL' || type === gridType) {
-        grid.classList.remove('w3-hide');
-      } else {
-        grid.classList.add('w3-hide');
-      }
-    });
+        // Show the first (itemsPerPage) items, hide the rest
+        filterBoxes.forEach((box, index) => {
+            if (index < itemsPerPage) {
+                box.style.display = 'block';
+            } else {
+                box.style.display = 'none';
+            }
+        });
+    }
 
-    // Remove 'selected' class from all filter buttons
+    const filterButtons = document.querySelectorAll('.filter-button');
+
+    function filterPhotos(type) {
+        const photoGrids = document.querySelectorAll('.filter-box');
+
+        photoGrids.forEach(grid => {
+            const gridType = grid.getAttribute('data-type');
+
+            if (type === 'ALL' || type === gridType) {
+                grid.classList.remove('w3-hide');
+            } else {
+                grid.classList.add('w3-hide');
+            }
+        });
+
+        // Remove 'selected' class from all filter buttons
+        filterButtons.forEach(button => {
+            button.classList.remove('selected');
+        });
+
+        // Add 'selected' class to the clicked filter button
+        const selectedButton = document.querySelector(`.filter-button[data-type="${type}"]`);
+        selectedButton.classList.remove('w3-white');
+        selectedButton.classList.add('selected');
+    }
+
+
     filterButtons.forEach(button => {
-      button.classList.remove('selected');
+        button.addEventListener('click', function () {
+            const filterType = this.getAttribute('data-type');
+            filterPhotos(filterType);
+        });
     });
 
-    // Add 'selected' class to the clicked filter button
-    const selectedButton = document.querySelector(`.filter-button[data-type="${type}"]`);
-    selectedButton.classList.remove('w3-white');
-    selectedButton.classList.add('selected');
-}
 
+    paginationButtons.forEach(button => {
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
 
-  filterButtons.forEach(button => {
-  button.addEventListener('click', function() {
-    const filterType = this.getAttribute('data-type');
-    filterPhotos(filterType);
-  });
-});
+            paginationButtons.forEach(btn => {
+                btn.classList.remove('w3-black');
+            });
+
+            this.classList.add('w3-black');
+
+            const currentPage = parseInt(this.textContent);
+
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+
+            filterBoxes.forEach((box, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        });
+    });
 
 </script>
 
