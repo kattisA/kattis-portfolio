@@ -275,11 +275,10 @@
     function updatePagination(currentPage, totalPages) {
         paginationContainer.innerHTML = '';
 
-        const paginationHTML = ['<a href="#" class="w3-bar-item pagination-button previous-button">«</a>'];
+        const paginationHTML = [];
         for (let i = 1; i <= totalPages; i++) {
             paginationHTML.push(`<a href="#" class="w3-bar-item w3-button pagination-button">${i}</a>`);
         }
-        paginationHTML.push('<a href="#" class="w3-bar-item pagination-button next-button">»</a>');
 
         paginationContainer.innerHTML = paginationHTML.join('');
 
