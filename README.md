@@ -16,6 +16,7 @@ Katarina Lejonlid. See more of [my GitHub pages](https://kattisa.github.io/).
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+Inspiration and further reading.
 * [W3-schools templates](https://www.w3schools.com/howto/howto_website_create_portfolio.asp)
+* [W3-CSS](https://www.w3schools.com/w3css)
 
