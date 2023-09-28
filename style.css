@@ -38,4 +38,12 @@
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+.block-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px; /* adjust this value based on your preference */
+}
+
+
 
