@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>W3.CSS Template</title>
+    <title>System Developer portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -25,11 +25,11 @@
            title="close menu">
             <i class="fa fa-remove"></i>
         </a>
-        <img src="/images/kattis_liten.jpg" style="width:45%;" class="w3-round"><br><br>
+        <img src="/images/kattis_liten.jpg" style="width:45%;" class="w3-round" alt="System developer Kattis Lejonlid"><br><br>
         <h4><b>PORTFOLIO</b></h4>
     </div>
     <div class="w3-bar-block">
-        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
                 class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
                 class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
@@ -37,10 +37,12 @@
                 class="fa fa-keyboard-o fa-fw w3-margin-right"></i>TECH SKILLS</a>
         <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
             <i class="fa fa-building-o fa-fw w3-margin-right" aria-hidden="true"></i>WORK EXPERIENCE</a>
+        <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+            <i class="fa fa-graduation-cap fa-fw w3-margin-right" aria-hidden="true"></i>EDUCATION</a>
     </div>
     <div class="w3-panel w3-large">
-        <a href="https://github.com/kattisA"><i class="fa fa-github w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/lejonlidkatarina/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a href="https://github.com/kattisA" aria-label="Github profile"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/lejonlidkatarina/" aria-label="LinkedIn profile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
 </nav>
 
@@ -53,8 +55,8 @@
 
     <!-- Header -->
     <header id="portfolio">
-        <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;"
-                         class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+        <a href="#" aria-label="Back to top"><img src="/images/kattis_liten.jpg" style="width:65px;"
+                         class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity" alt="Kattis Lejonlid profile"></a>
         <span class="w3-button w3-hide-large w3-xlarge w3-hover-text-grey" onclick="w3_open()"><i
                 class="fa fa-bars"></i></span>
         <div class="w3-container">
@@ -72,7 +74,12 @@
                         class="fa fa-file-text-o w3-margin-right"></i>Articles
                 </button>
             </div>
-            <p>Some of my different projects, pages and articles that I have produced throughout the years.</p>
+            <p class="w3-large">My interest in the tech sector and programming has resulted in several pages, apps and articles that
+                I have developed as part of my professional development. This is a way to explore different technologies
+                or deepen the knowledge in some particular technologies I would like to know more about.</p>
+            <p class="w3-large"> In this section I have a selection from my projects, pages and articles that I have produced
+                throughout the years. You can filter them in these different categories.</p>
+
         </div>
     </header>
 
@@ -85,6 +92,7 @@
                 <p><b>Movie Search page</b></p>
                 <p>Search movies and add them to your favorites! This site is using the OMDB API for searching among movies.
                     The site will give you a nice overview of the movies in a card view.</p>
+                <a href="https://kattisa.github.io/movie-app/" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
@@ -93,6 +101,7 @@
             <div class="w3-container w3-white">
                 <p><b>Dinner Spinner App</b></p>
                 <p>Playful app to randomize your dinner, it could be whatever. Be ready!</p>
+                <a href="https://play.google.com/store/apps/details?id=com.brainyful.dinnerspinner&hl=sv&gl=US" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="pages">
@@ -102,16 +111,18 @@
                 <p><b>Marvel Search page</b></p>
                 <p>Using the Marvel API to look for heroes using a search field. This will bring you the information you need.
                 Just remember this is built upon a free licence and can't be used unlimited times per day.</p>
+                <a href="https://kattisa.github.io/marvel-search/" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
         <div class="w3-third w3-container filter-box" data-type="articles">
-            <img src="/images/medium_newbie.png" alt="Medium article screenshot" style="width:100%"
+            <img src="/images/medium_newbie.png" alt="Medium article Newbie" style="width:100%"
                  class="w3-hover-opacity">
             <div class="w3-container w3-white">
                 <p><b>From Newbie to pro</b></p>
                 <p>- becoming a pro in system development
                     Being new in system development I just couldn’t wait to become a senior developer and no longer be
                     labelled as a junior developer. </p>
+                <a href="https://medium.com/@kattis.a/from-newbie-to-pro-69a65274a204" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
@@ -120,6 +131,7 @@
                 <p><b>Activities App</b></p>
                 <p>Do you want to come up with an activity but the inspiration is at zero? Activities
                     will help you randomize several built in activities. What are you waiting for?</p>
+                <a href="https://play.google.com/store/apps/details?id=com.brainyful.activities&hl=sv" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="apps">
@@ -128,25 +140,28 @@
                 <p><b>VABbis App</b></p>
                 <p>Keep track of your kid's sick days by using this easy app to take notes.
                     When you need to use this information you don't have to rely on your (bad) memory!</p>
+                <a href="https://play.google.com/store/apps/details?id=com.brainyful.vabbis&hl=sv" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="pages">
-            <img src="/images/weather_app.png" alt="Screenshot of react weather app" style="width:100%"
+            <img src="/images/weather_app.png" alt="React weather app" style="width:100%"
                  class="w3-hover-opacity">
             <div class="w3-container w3-white">
                 <p><b>Weather app</b></p>
                 <p>Weather app built in React with Material UI. What's the weather in the amazing city of Uppsala, Sweden.
                     Keep also track of humidity levels!</p>
+                <a href="https://kattisa.github.io/WeatherApp/" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
         <div class="w3-third w3-container filter-box" data-type="articles">
-            <img src="/images/medium_pojo.png" alt="Medium article screenshot" style="width:100%"
+            <img src="/images/medium_pojo.png" alt="Medium article POJO" style="width:100%"
                  class="w3-hover-opacity">
             <div class="w3-container w3-white">
                 <p><b>From Json to POJO</b></p>
                 <p>Library versus plugin
                     When I needed to generate a POJO class from a JSON resource I stumbled upon two different ways
                     to do this, using a library or a plugin.</p>
+                <a href="https://medium.com/@kattis.a/from-json-to-pojo-fa4c4f2346bd" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom filter-box" data-type="articles">
@@ -156,6 +171,7 @@
                 <p><b>Installing Virtual Box on Windows</b></p>
                 <p>This is the exciting story about how I installed Windows 10 in a Virtual machine (VM) using
                     VirtualBox, alongside with my main OS, Ubuntu 18.4.</p>
+                <a href="https://medium.com/@kattis.a/how-to-install-windows-in-virtualbox-on-ubuntu-18-4-19b07afd3dff" class="w3-button w3-black w3-margin-bottom">Visit</a>
             </div>
         </div>
     </div>
@@ -171,28 +187,36 @@
     <!-- Images of Me -->
     <div class="w3-row-padding w3-padding-16" id="about">
         <div class="w3-col m6">
-            <img src="/images/marvin-meyer.jpg" alt="Me" style="width:100%">
+            <img src="/images/marvin-meyer.jpg" alt="Multiples laptops on office table" style="width:100%">
         </div>
         <div class="w3-col m6">
-            <img src="/images/kattis_lecture.jpg" alt="Me" style="width:100%">
+            <img src="/images/kattis_lecture.jpg" alt="Kattis Lejonlid giving a lecture " style="width:100%">
         </div>
     </div>
 
     <div class="w3-container w3-padding-large" style="margin-bottom:32px">
         <h2>About Me</h2>
-        <p>System developer with special interest in front-end I started my career in tech after deciding
-            to switch career from another sector, and I have never regretted it! My interest in code
-            started when I was customizing my MySpace page for my music.</p>
-        <p>I am a very creative person, and I always find ways to canalize my creativity such as music, arts and
-            preferably combined with some tech skills as in sound technics.</p>
+        <p class="w3-large">System developer with special interest in front-end I started my career in tech after deciding
+            to switch career from another sector, and I have never regretted it! Previously I worked in the social sector
+            with research and  evaluation. My interest in code started when I was customizing my MySpace page for my music.
+            I found it very interesting, so I continued coding until I realized I wanted to do this full time! </p>
+        <p class="w3-large"> My choice for learning more about technology lead me to studying computer science bachelor
+            program at Uppsala university to get a deep and broad knowledge in the field.</p>
+        <p class="w3-large">As a creative person I always find ways to canalize my creativity such as music, arts and
+            preferably combined with some tech skills as in sound technics. I have also programming as a hobby
+            which has resulted in some apps on Google play. Beyond that I enjoy spending time with my
+            family and friends. When possible I enjoy visiting restaurants and experiencing nice food in good company. </p>
         <hr>
 
         <h2 id="skills">Technical Skills</h2>
-        <p>My skills range extend from front-end to back-end development since I have extensive experience working
-            with the entire spectrum of code.
-            I have been working with front end development as well as full stack.
-            In my work I have utilized various tools for managing repositories and handling issues,
-            including BitBucket, Azure, and GitHub.  </p>
+        <p class="w3-large">My skills range extend from front-end to back-end development since I have extensive experience working
+            with the entire spectrum of code. I have been working with front end development as well as full stack.
+            The following skills will give you an idea of what my strengths and experiences are.
+        </p>
+        <p class="w3-large">  I also have a variety of experiences in working in teams and in smaller projects with only one to two developers.
+            In my work I have utilized various tools for managing repositories and handling issues, including BitBucket,
+            Azure, and GitHub. My favorite ide to use on a daily basis is Intellij Idea and I also prefer using
+            the terminal when I use GIT.</p>
         <h3>Front-end</h3>
         <span class="w3-tag w3-pale-blue w3-xlarge w3-margin-right w3-margin-bottom">REACT</span>
         <span class="w3-tag w3-cyan w3-xlarge w3-margin-right w3-margin-bottom">TypeScript</span>
@@ -212,17 +236,21 @@
         <span class="w3-tag w3-pale-blue w3-xlarge w3-margin-right w3-margin-bottom">Jira</span>
         <span class="w3-tag w3-blue-grey w3-xlarge w3-margin-right w3-margin-bottom">Postman</span>
         <span class="w3-tag w3-pale-blue w3-xlarge w3-margin-right w3-margin-bottom">VS Code</span>
+        <span class="w3-tag w3-blue-grey w3-xlarge w3-margin-right w3-margin-bottom">Scrum</span>
+        <span class="w3-tag w3-pale-blue w3-xlarge w3-margin-right w3-margin-bottom">GIT</span>
         <hr>
 
         <h2 id="experience">Work Experience</h2>
-        <button type="button" class="collapsible">Front end developer at NBIS</button>
+        <p class="w3-large">In this section I would like to highlight my relevant experience in the field of computer science.
+        Since I switched careers I have previous experience that has been important even in this field as well. The previous
+            working experience is in the field of society, it has been social work and also as a research analyst and evaluator.</p>
+        <button type="button" class="collapsible w3-large">Front end developer at NBIS</button>
         <div class="content">
             <p>Front end development in scrum team in the field of bioinformatics, developing applications for
                 researchers to present and visualize their data. Using new frameworks and libraries to maintain
                 good knowledge of the field.</p>
         </div>
-
-        <button type="button" class="collapsible">System developer at Omegapoint</button>
+        <button type="button" class="collapsible w3-large">System developer at Omegapoint</button>
         <div class="content">
             <p>System development of Web applications in health care. Working in agile teams as a full-stack developer.
                 Techniques such as Java 11, Angular, React, Wicket 8, SQL, Hibernate, JPA, maven and docker.
@@ -230,22 +258,46 @@
 
                 Also experience of Android app in the field of health care. Android Studio, Gradle and Google Play Console.</p>
         </div>
-        <button type="button" class="collapsible">System developer at Aurora Innovation</button>
+        <button type="button" class="collapsible w3-large">System developer at Aurora Innovation</button>
         <div class="content">
             <p>System developer for cloud-based telephone solution Aurora TeleQ mainly building new features improving
                 functionality and usability. Java and Ajax Web application framework (zk) with MVVM. MongoDB, Git,
                 Angular, HTML, CSS, JavaScript.</p>
         </div>
+        <h2 id="education">Education</h2>
+        <p class="w3-large"> I have had the opportunity to change careers and study two bachelor program at university level that have given
+            me a broad understanding in the two fields. I have also had the opportunity to deepen my knowledge in the
+            Scrum methodology which has been very valuable for my work. </p>
+        <button type="button" class="collapsible w3-large">Bachelor in computer science</button>
+        <div class="content">
+            <p>Bachelor in computer science from Uppsala University, including program construction, mathematics
+                such as Algebra, object-oriented programming. Programming languages used in the cources are Haskell,
+                Java, C, Python, and Erlang. Courses in web development and Human-Computer Interaction. Exam year 2017.</p>
+        </div>
+        <button type="button" class="collapsible w3-large">Certified Scrum Master</button>
+        <div class="content">
+            <p>Scrum Master certification from Scrum Alliance. The course aims to give all the needed knowledge and
+                tools to become a Scrum Master.</p>
+        </div>
+        <button type="button" class="collapsible w3-large">Social worker exam</button>
+        <div class="content">
+            <p>Exam in social work, bachelor degree. The program includes different courses as social psychology,
+                psychology, sociology and traineeship during two periods in the program. Exam year 2003.</p>
+        </div>
+
     </div>
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-dark-grey">
         <div class="w3-row-padding">
-            <div class="w3-third">
-                <h3>FOOTER</h3>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            <div class="w3-third ">
+                <h3>CONTACT</h3>
+                    <span class="w3-large">LinkedIn</span>
+                    <p>You can contact me through my <a href="https://www.linkedin.com/in/lejonlidkatarina/">LinkedIn profile</a> .</p>
+                    <span class="w3-large">Acknowledgements</span>
+                    <p>Thank to <a href="https://unsplash.com/@marvelous" target="_blank">Marvin Meyer</a> for the photo of the office </p>
+
+
             </div>
 
             <div class="w3-third">
@@ -268,30 +320,27 @@
 
 
             <div class="w3-third">
-                <h3>POPULAR TAGS</h3>
+                <h3>BUZZ WORDS</h3>
                 <p>
-                    <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
-                    <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span
-                        class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+                    <span class="w3-tag w3-pale-yellow w3-margin-bottom">Computer Science</span> <span
+                        class="w3-tag w3-sand w3-margin-bottom">Music</span> <span
+                        class="w3-tag w3-khaki  w3-margin-bottom">Front-end</span>
+                    <span class="w3-tag  w3-pale-yellow  w3-margin-bottom">Back-end</span> <span
+                        class="w3-tag w3-sand  w3-margin-bottom">Career switch</span> <span
+                        class="w3-tag w3-khaki  w3-margin-bottom">Android Apps</span>
+                    <span class="w3-tag w3-pale-yellow  w3-margin-bottom">Search sites</span> <span
+                        class="w3-tag w3-sand  w3-margin-bottom">Arts</span> <span
+                        class="w3-tag w3-khaki  w3-margin-bottom">Family life</span>
+                   <span class="w3-tag  w3-pale-yellow  w3-margin-bottom">Medium articles</span> <span
+                        class="w3-tag w3-sand  w3-margin-bottom">Dining</span> <span
+                        class="w3-tag w3-khaki  w3-margin-bottom">Tech</span>
                 </p>
             </div>
 
         </div>
     </footer>
 
-    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
-                                                                title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+    <div class="w3-black w3-center w3-padding-24">
     </div>
 
     <!-- End page content -->
